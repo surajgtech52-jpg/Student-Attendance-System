@@ -22,13 +22,13 @@ A lightweight, Java-based web application designed to help teachers manage stude
 * `web/`: Contains the frontend files like `index.html` and `login_teacher.html`.
 * `WEB-INF/`: Contains the `web.xml` configuration for servlet mapping.
 
-## ⚙️ Setup & Installation
+*/## ⚙️ Setup & Installation
 1.  **Database Setup**: 
     * Create a MySQL database and a table named `ab` with columns for `ID`, `PASSWORD`, and `DateTime`.
 2.  **Configuration**:
     * Update your `config.properties` file with your local `db.url`, `db.user`, and `db.pass`.
 3.  **Deployment**:
-    * Compile the Java files and deploy the project on a server like Apache Tomcat or run the `SimpleLoginServer` directly.
+    * Compile the Java files and deploy the project on a server like Apache Tomcat or run the `SimpleLoginServer` directly.?/*
 
 ## 👤 Author
 * **Engineering Student** at A.P. Shah Institute of Technology (APSIT).
