@@ -1,36 +1,29 @@
 # Student Attendance System 📊
 
-A lightweight, Java-based web application designed to help teachers manage student attendance with real-time data visualization. This project was developed as part of my engineering coursework.
+A full-stack web application designed for engineering faculty to automate classroom attendance management and visualize student data in real-time.
 
 ## 🚀 Features
-* **Teacher Authentication**: Secure login portal for authorized faculty members.
-* **Class & Batch Management**: Dynamically add and organize classes (FE, SE, TE, BE) and specific batches.
-* **Attendance Tracking**: Mark students as 'Present' or 'Absent' for specific dates.
-* **Data Visualization**: Integrated **Chart.js** to display real-time attendance statistics (Present vs. Absent) via interactive pie charts.
-* **Dynamic Student Lists**: Add, remove, and automatically sort students by Roll Number.
+* **Teacher Authentication**: Secure login portal using **MySQL** for credential verification.
+* **Class & Batch Management**: Dynamically organize students by Year (FE, SE, TE, BE), Class, and Batch.
+* **Attendance Tracking**: Simple interface to mark students as 'Present' or 'Absent' for specific dates.
+* **Data Visualization**: Integrated **Chart.js** to generate interactive pie charts showing attendance percentages.
+* **Automated Record Keeping**: Maintains a history of attendance with unique constraints to prevent duplicate entries.
 
 ## 🛠️ Tech Stack
-* **Backend**: Java (Servlets), JDBC.
-* **Frontend**: HTML5, CSS3, JavaScript.
-* **Database**: MySQL.
-* **APIs & Libraries**: 
-    * Chart.js (for analytics).
-    * FontAwesome (for UI icons).
+* **Backend**: Java (Servlets), JDBC
+* **Frontend**: HTML5, CSS3, JavaScript, Chart.js
+* **Database**: MySQL
+* **Tools**: Apache Tomcat, MySQL Workbench
 
 ## 📂 Project Structure
-* `src/`: Contains the Java source code, including `LoginServlet.java` and `SimpleLoginServer.java`.
-* `web/`: Contains the frontend files like `index.html` and `login_teacher.html`.
-* `WEB-INF/`: Contains the `web.xml` configuration for servlet mapping.
+* `src/`: Java source files (Servlets and DB logic).
+* `web/`: HTML, CSS, and Client-side JS files.
+* `sql/`: Database dump and schema scripts.
 
-*/## ⚙️ Setup & Installation
-1.  **Database Setup**: 
-    * Create a MySQL database and a table named `ab` with columns for `ID`, `PASSWORD`, and `DateTime`.
-2.  **Configuration**:
-    * Update your `config.properties` file with your local `db.url`, `db.user`, and `db.pass`.
-3.  **Deployment**:
-    * Compile the Java files and deploy the project on a server like Apache Tomcat or run the `SimpleLoginServer` directly.?/*
+## ⚙️ Setup
+1. Import the `attendance_system.sql` file into your local MySQL server.
+2. Configure the database credentials in `config.properties`.
+3. Deploy the project on a Java-compatible web server (e.g., Apache Tomcat).
 
 ## 👤 Author
 * **Engineering Student** at A.P. Shah Institute of Technology (APSIT).
-
----
